@@ -30,14 +30,15 @@
 // myLinkedList.append(5);
 // myLinkedList.append(16);
 
-
+// 10-->5-->16 
 class LinkedList {
   constructor(value) {
     this.head = {
       //All you need is value of the property
-      value: value,
-      // and the pointer
-      next: null
+      // the value will change but the pointer will still point to the same item
+      value: 10,
+      // and the pointer to the next node 
+      next: 5,
     };
     this.tail = this.head;
     this.length = 1;
